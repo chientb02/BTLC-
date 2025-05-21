@@ -76,7 +76,7 @@ void loadWallets() {
         }
     }
     inFile.close();
-}
+} 
 
 // Hàm ghi log giao dịch
 void logTransaction(const string& sender, const string& receiver, int amount) {
