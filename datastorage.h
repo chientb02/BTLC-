@@ -14,3 +14,4 @@ public:
 
     static void writeLog(const std::string& path, const std::string& message);
 };
+ 

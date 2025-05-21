@@ -9,7 +9,7 @@ bool DataStorage::saveUsers(const std::string& path, const std::vector<User>& us
     for (const auto& user : users) {
         ofs << user.serialize() << '\n';
     }
-    return true;
+    return true; 
 }
 
 std::vector<User> DataStorage::loadUsers(const std::string& path) {

@@ -13,3 +13,4 @@ public:
     std::string serialize() const;
     static Wallet deserialize(const std::string& line);
 };
+ 

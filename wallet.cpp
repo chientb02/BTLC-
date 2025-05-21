@@ -13,7 +13,7 @@ std::string Wallet::serialize() const {
 Wallet Wallet::deserialize(const std::string& line) {
     std::istringstream iss(line);
     std::string token;
-    Wallet wallet;
+    Wallet wallet; 
     std::getline(iss, wallet.walletId, '|');
     std::getline(iss, wallet.ownerUsername, '|');
     std::getline(iss, token, '|');
