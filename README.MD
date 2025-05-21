@@ -1,3 +1,4 @@
+<h1>Bài tập lớn môn c++</h1>
 # Hệ Thống Quản Lý Ví Điểm Thưởng 🚀
 
 ![C++](https://img.shields.io/badge/C++-11-blue.svg)
@@ -149,7 +150,7 @@ BAI TAP GIUA KY MON C++ Cài Đặt chương trình:
 4.Thiết lập hệ thống trên github.
 
 4.1. Tạo 1 Repositories trên github(https://github.com)
-4.2. Truy cập đường link  https://github.com/chientb02/BTLC-, chọn mục "code" và chọn "download zip".
+4.2. Truy cập đường link https://github.com/chientb02/BTLC-, chọn mục "code" và chọn "download zip".
 4.3. Truy vẫn vào Repositories vừa tạo ở bước 4.1 chọn "uploading an existing file" và chọn những file và folder ở trong folder(compressed zip) vừa tải xuống ở bước 4.2 kéo vào ô trước màn hình và chọn "commit changes".
 5.Thiết lập chương trình kết nối với hệ thống.
 
