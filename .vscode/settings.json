@@ -1,0 +1,8 @@
+{
+    "C_Cpp.default.compilerPath": "d:\\RewardWalletSystem\\main.cpp",
+    "files.associations": {
+        "sstream": "cpp",
+        "iomanip": "cpp",
+        "fstream": "cpp"
+    }
+}

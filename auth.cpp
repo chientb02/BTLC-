@@ -1,0 +1,29 @@
+#include "auth.h"
+#include <openssl/sha.h>
+#include <sstream>
+#include <iomanip>
+#include <random>
+
+std::string Auth::hashPassword(const std::string& password) {
+    unsigned char hash[SHA256_DIGEST_LENGTH];
+    SHA256((const unsigned char*)password.c_str(), password.size(), hash);
+    std::ostringstream oss;
+    for (int i = 0; i < SHA256_DIGEST_LENGTH; ++i)
+        oss << std::hex << std::setw(2) << std::setfill('0') << (int)hash[i];
+    return oss.str();
+}
+
+bool Auth::verifyPassword(const std::string& password, const std::string& hash) {
+    return hashPassword(password) == hash;
+}
+
+std::string Auth::generateRandomPassword(int length) {
+    const std::string chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, chars.size() - 1);
+    std::string pwd;
+    for (int i = 0; i < length; ++i)
+        pwd += chars[dis(gen)];
+    return pwd;
+}
